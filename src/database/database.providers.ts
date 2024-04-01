@@ -5,6 +5,6 @@ export const databaseProviders = [
   {
     provide: 'DATABASE_CONNECTION',
     useFactory: (): Promise<typeof mongoose> =>
-      mongoose.connect("mongodb://partdcInvestmentFunds:0860117685hosseiN@192.168.5.82:27017/realtorApp?authSource=admin"),
+      mongoose.connect("mongodb://user:pass@127.0.0.1:27017/onlineStore?authSource=admin"),
   }
 ];
